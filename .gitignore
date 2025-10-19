@@ -1,0 +1,24 @@
+#. Virtual environment
+.venv/
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+
+# Environment variables
+.env
+
+# Editor directories and files
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# pytest cache
+.pytest_cache/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
