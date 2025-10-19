@@ -1,0 +1,13 @@
+[Unit]
+Description=Gunicorn instance to serve Flask API
+After=network.target
+
+[Service]
+User=misrapas
+Group=www-data
+WorkingDirectory=/opt/flask_api
+Environment="PATH=/opt/flask_api/.venv/bin"
+ExecStart=/opt/flask_api/.venv/bin/gunicorn --workers 3 --bind 127.0.0.1:3000 app:app
+
+[Install]
+WantedBy=multi-user.target
